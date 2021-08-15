@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles2.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            function correct(x)
+            {
+                document.getElementById(x).style.backgroundColor = 'green';
+                document.getElementById("correct").style.visibility = "visible";
+                
+            }
+            
+            function incorrect(x)
+            {
+                document.getElementById(x).style.backgroundColor = 'red';
+                document.getElementById("incorrect").style.visibility = "visible";
+                
+            }
+            
+            function confirm(x)
+            {
+                if(document.querySelector("#answer").value == "telomere")
+                {
+                    document.getElementById("question").style.backgroundColor = 'green';
+                    document.getElementById("f_correct").style.visibility = "visible";
+                }
+                else
+                {
+                    document.getElementById("question").style.backgroundColor = 'red';
+                    document.getElementById("f_incorrect").style.visibility = "visible";
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                
+                <h3 id = "chromosomes">How many chromosomes does a human cell have? </h3>
+                <div>
+                    <button onclick="incorrect('a');" id = "a">44</button>
+                    <button onclick="incorrect('b');" id = "b">45</button>
+                    <button onclick="correct('c');" id = "c">46</button>
+                    <button onclick="incorrect('d');" id = "d">47</button>
+                </div>
+                <h4 id ="incorrect" style = "visibility: hidden;">Incorrect </h4>
+                <h4 id = "correct" style = "visibility: hidden;">Correct! </h4>
+
+                <!-- TODO: Add multiple choice question here -->
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 id = "question">What is the name for the chromosome cap? </h3>
+                <h4 id ="f_incorrect" style = "visibility: hidden;">Incorrect </h4>
+                <h4 id = "f_correct" style = "visibility: hidden;">Correct! </h4>
+                <form>
+                    <input placeholder = "Answer" id = "answer" type = "text">
+                    <!--<input type = 'submit' value = 'confirm answer'>-->
+                    <button onclick="confirm(e);" id = "e">Confirm answer </button>
+                </form>
+
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>

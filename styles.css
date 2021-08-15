@@ -1,0 +1,156 @@
+a
+{
+    color:rgb(1, 13, 121);
+    text-decoration:none;
+}
+
+a:hover
+{
+    text-decoration:underline;
+    color:rgb(133, 34, 226);
+    transition-duration:0.4s;
+}
+
+form
+{
+    margin-left: 20px;
+}
+
+#background
+{
+    background-image: url('lab.png');
+}
+
+body
+{
+    background-color: rgb(255, 250, 214);
+}
+
+h1
+{
+    background-color: rgb(233, 255, 237);
+    /* background-color: rgb(191, 255, 234); */
+    color: black;
+    padding:10px;
+    font:bold;
+    overflow: auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:21pt;
+}
+
+#smile
+{
+    margin-left:25px;
+}
+
+#hc
+{
+    background-color: rgb(233, 255, 237);
+    color: black;
+    padding:10px;
+    font:bold;
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:21pt;
+}
+
+#pl
+{
+    font: bolder;
+    color: black;
+    font-size: 15pt;
+    margin-left:20px;
+    margin-bottom:25px;
+}
+
+#pc
+{
+    font: bolder;
+    color: black;
+    font-size: 15pt;
+    margin-left:20px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin-bottom:25px;
+}
+
+tr
+{
+    height:60px;
+}
+
+th
+{
+    font-size: 13pt;
+    text-align: center;
+    border:2px solid rgb(1, 13, 121);
+    background-color: rgb(233, 255, 237);
+}
+
+#center
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer
+{
+    font-size: 12pt;
+    text-align: center;
+}
+
+ol
+{
+    margin-bottom:25px;
+    font-size:15pt;
+}
+
+ul
+{
+    margin-bottom:25px;
+    font-size:15pt;
+}
+
+button
+{
+    font-size:12pt;
+    margin-left:20px;
+}
+
+button:hover
+{
+    font-size:12pt;
+    background-color:rgb(240, 222, 255);
+    transition-duration: 0.4s;
+}
+
+div
+{
+    margin-left:22px;
+    margin-bottom:25px;
+}
+
+#contact
+{
+    margin-left:22px;
+    margin-bottom:35px;
+    font-size:14pt;
+}
+
+#last_button
+{
+    margin-top:25px;
+    margin-left: 20px;
+}
